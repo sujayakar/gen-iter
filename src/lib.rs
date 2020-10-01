@@ -91,7 +91,7 @@ where
 #[macro_export]
 macro_rules! gen_iter {
     ($block: block) => {
-        $crate::GenIter(|| $block)
+        $crate::GenIter(move || $block)
     }
 }
 
